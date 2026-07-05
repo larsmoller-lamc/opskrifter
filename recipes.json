@@ -77,59 +77,75 @@
   ]
 },
   {
-    "id": "rugbroed",
-    "navn": "Rugbrød",
-    "kilde": "Meyers Madhus",
-    "kilde_url": null,
-    "portioner": 20,
-    "tags": ["brød"],
-    "favorit": false,
-    "billede": null,
-    "noter": null,
-    "ingredienser": [
-      { "mængde": 5, "enhed": "dl", "navn": "surdej" },
-      { "mængde": 1, "enhed": "l", "navn": "vand" },
-      { "mængde": 500, "enhed": "g", "navn": "knækkede rugkerner" },
-      { "mængde": 500, "enhed": "g", "navn": "rugmel" },
-      { "mængde": 200, "enhed": "g", "navn": "solsikkekerner" },
-      { "mængde": 100, "enhed": "g", "navn": "hørfrø" },
-      { "mængde": 30, "enhed": "g", "navn": "salt" }
-    ],
-    "fremgangsmåde": [
-      "Bland surdej, vand og salt i en stor skål.",
-      "Tilsæt kerner, frø og mel, og rør det godt sammen.",
-      "Dæk skålen til og lad dejen hæve ved stuetemperatur i 4-6 timer.",
-      "Hæld dejen i en smurt rugbrødsform og lad den efterhæve 1 time.",
-      "Bag brødet ved 180°C i ca. 1 time og 45 minutter.",
-      "Vend brødet ud af formen og lad det køle helt af på en rist."
-    ]
-  },
+  "id": "caesarsalat",
+  "navn": "Cæsarsalat",
+  "kilde": "Valdemarsro",
+  "kilde_url": "https://www.valdemarsro.dk/caesarsalat/",
+  "portioner": 4,
+  "tags": ["aftensmad"],
+  "favorit": false,
+  "billede": "https://www.valdemarsro.dk/wp-content/2017/03/ceasarsalat.jpg",
+  "noter": null,
+  "ingredienser": [
+    { "mængde": 4, "enhed": "stk", "navn": "kyllingebryst med skind" },
+    { "mængde": 2, "enhed": "stk", "navn": "romainesalat, plukket i grove stykker" },
+    { "mængde": 50, "enhed": "g", "navn": "parmesan, i flager eller groftrevet" },
+    { "mængde": 1, "enhed": "tsk", "navn": "smør, til stegning" },
+    { "mængde": 1, "enhed": "tsk", "navn": "olivenolie, til stegning" },
+    { "mængde": null, "enhed": null, "navn": "salt og friskkværnet peber" },
+    { "mængde": 2, "enhed": "stk", "navn": "skiver brød, fx grydebrød (til croutoner)" },
+    { "mængde": 1, "enhed": "tsk", "navn": "smør (til croutoner)" },
+    { "mængde": 1, "enhed": "dl", "navn": "mayonnaise" },
+    { "mængde": 2, "enhed": "stk", "navn": "ansjosfileter i olie" },
+    { "mængde": 1, "enhed": "tsk", "navn": "worcestershire sauce" },
+    { "mængde": 30, "enhed": "g", "navn": "parmesan, friskrevet (til dressing)" },
+    { "mængde": 1, "enhed": "fed", "navn": "hvidløg, presset" },
+    { "mængde": 0.5, "enhed": "stk", "navn": "citron, lidt citronsaft herfra" },
+    { "mængde": null, "enhed": null, "navn": "salt og friskkværnet peber (til dressing)" }
+  ],
+  "fremgangsmåde": [
+    "Rids skindsiden af kyllingebrysterne med en skarp kniv og drys med salt og peber. Kom smør og olie på en kold pande og læg kyllingebrysterne på panden med skindsiden ned. Lad kyllingebrysterne stege langsomt ved middelvarme i 20 minutter på skindsiden. Gør imens dressing, croutoner og salaten klar.",
+    "Vend kyllingebrysterne, skru lidt op for varmen og steg dem i cirka 4-5 minutter på den anden side.",
+    "Pluk salaten og fordel den på fire tallerkener. Skær kyllingebrysterne i skiver, anret dem på tallerkener og kom til sidst dressing, parmesan og croutoner ovenpå."
+  ]
+},
   {
-    "id": "aeblekage",
-    "navn": "Æblekage",
-    "kilde": "Mormor",
-    "kilde_url": null,
-    "portioner": 6,
-    "tags": ["dessert"],
-    "favorit": false,
-    "billede": null,
-    "noter": "Perfekt til rester af æbler fra haven.",
-    "ingredienser": [
-      { "mængde": 6, "enhed": "stk", "navn": "æbler" },
-      { "mængde": 100, "enhed": "g", "navn": "smør" },
-      { "mængde": 150, "enhed": "g", "navn": "rasp" },
-      { "mængde": 100, "enhed": "g", "navn": "sukker" },
-      { "mængde": 1, "enhed": "tsk", "navn": "kanel" },
-      { "mængde": 2.5, "enhed": "dl", "navn": "flødeskum" }
-    ],
-    "fremgangsmåde": [
-      "Skræl æblerne, fjern kernehuset og skær dem i både.",
-      "Kog æblerne møre i en gryde med lidt vand og halvdelen af sukkeret.",
-      "Rist rasp med smør, sukker og kanel på en pande til det er gyldent og sprødt.",
-      "Læg lag af æblemos og ristet rasp i skåler eller et fad.",
-      "Top med flødeskum og server."
-    ]
-  },
+  "id": "kyllingelaar-i-floedesauce",
+  "navn": "Kyllingelår i flødesauce",
+  "kilde": null,
+  "kilde_url": null,
+  "portioner": 4,
+  "tags": ["aftensmad"],
+  "favorit": false,
+  "billede": "https://usercontent.one/wp/camillemaja.dk/wp-content/uploads/2019/11/fullsizeoutput_1cae-e1574250353529.jpeg?media=1763498017",
+  "noter": null,
+  "ingredienser": [
+    { "mængde": 4, "enhed": "stk", "navn": "kyllingelår" },
+    { "mængde": 2, "enhed": "dl", "navn": "fløde" },
+    { "mængde": 2, "enhed": "stk", "navn": "løg, finthakket" },
+    { "mængde": 3, "enhed": "fed", "navn": "hvidløg, finthakket" },
+    { "mængde": 250, "enhed": "g", "navn": "champignon, skåret i skiver" },
+    { "mængde": 1, "enhed": "spsk", "navn": "smør" },
+    { "mængde": 1, "enhed": "dl", "navn": "kyllingebouillon" },
+    { "mængde": 1, "enhed": "tsk", "navn": "dijonsennep" },
+    { "mængde": 1, "enhed": "spsk", "navn": "frisk timian eller 1 tsk tørret" },
+    { "mængde": null, "enhed": null, "navn": "salt og peber efter smag" },
+    { "mængde": null, "enhed": null, "navn": "frisk persille til pynt (valgfri)" },
+    { "mængde": 4, "enhed": "dl", "navn": "ris (til servering)" }
+  ],
+  "fremgangsmåde": [
+    "Forvarm ovnen til 200°C.",
+    "Krydr kyllingelårene med salt og peber.",
+    "I en stor pande, smelt smørret ved medium varme. Brun kyllingelårene på begge sider, ca. 3-4 minutter på hver side. Fjern kyllingelårene fra panden og læg dem til side.",
+    "I samme pande tilsættes løg og hvidløg. Steg i ca. 2-3 minutter, indtil de er bløde og duftende.",
+    "Tilsæt champignon og steg, indtil de er gyldne og bløde, ca. 5 minutter.",
+    "Hæld kyllingebouillon og fløde i panden. Rør dijonsennep og timian i, og lad det simre i 5 minutter, indtil saucen tykner lidt.",
+    "Læg kyllingelårene tilbage i panden og hæld flødesaucen over dem.",
+    "Sæt panden i ovnen (hvis ovnfast) eller overfør til et ovnfast fad og bag i ca. 25-30 minutter, indtil kyllingen er gennemstegt.",
+    "Kog risene efter anvisning på emballagen.",
+    "Pynt med frisk persille, hvis ønsket, og server med ris."
+  ]
+},
   {
     "id": "havregroed",
     "navn": "Havregrød med bær",
