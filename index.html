@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F1F3F2">
+  <title>Opskrifter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="title">Opskrifter</h1>
+      <p class="subtitle" id="count">Indlæser…</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="search-row">
+      <input type="search" id="search" class="search-input" placeholder="Søg i opskrifter…" autocomplete="off">
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="chip chip-active" data-filter="alle">Alle</button>
+      <button class="chip" data-filter="morgenmad">Morgenmad</button>
+      <button class="chip" data-filter="frokost">Frokost</button>
+      <button class="chip" data-filter="aftensmad">Aftensmad</button>
+      <button class="chip" data-filter="dessert">Dessert</button>
+      <button class="chip" data-filter="brød">Brød</button>
+      <button class="chip" data-filter="kage">Kage</button>
+      <button class="chip chip-fav" data-filter="favorit">♥ Favorit</button>
+    </div>
+
+    <div class="recipe-list" id="recipe-list"></div>
+
+    <div class="empty" id="empty" hidden>
+      <p>Ingen opskrifter matcher.</p>
+    </div>
+  </div>
+
+  <!-- Recipe detail overlay -->
+  <div class="overlay" id="overlay" hidden>
+    <div class="overlay-inner" id="overlay-inner">
+      <button class="back-btn" id="back-btn" aria-label="Tilbage">← Tilbage</button>
+      <div id="recipe-detail"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

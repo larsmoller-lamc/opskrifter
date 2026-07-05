@@ -1,0 +1,170 @@
+[
+  {
+    "id": "chili-con-carne",
+    "navn": "Chili con carne",
+    "kilde": "Valdemarsro",
+    "kilde_url": "https://www.valdemarsro.dk/chili-con-carne/",
+    "portioner": 4,
+    "tags": ["aftensmad"],
+    "favorit": true,
+    "billede": null,
+    "noter": null,
+    "ingredienser": [
+      { "mængde": 500, "enhed": "g", "navn": "hakket oksekød" },
+      { "mængde": 2, "enhed": "stk", "navn": "løg" },
+      { "mængde": 3, "enhed": "fed", "navn": "hvidløg" },
+      { "mængde": 1, "enhed": "stk", "navn": "rød peberfrugt" },
+      { "mængde": 1, "enhed": "dåse", "navn": "hakkede tomater" },
+      { "mængde": 1, "enhed": "dåse", "navn": "kidneybønner" },
+      { "mængde": 1, "enhed": "dåse", "navn": "sorte bønner" },
+      { "mængde": 2, "enhed": "spsk", "navn": "tomatpuré" },
+      { "mængde": 1, "enhed": "spsk", "navn": "spidskommen" },
+      { "mængde": 2, "enhed": "tsk", "navn": "paprika" },
+      { "mængde": 1, "enhed": "tsk", "navn": "chili" },
+      { "mængde": 1, "enhed": "tsk", "navn": "salt" },
+      { "mængde": null, "enhed": null, "navn": "peber" },
+      { "mængde": 2, "enhed": "spsk", "navn": "olivenolie" }
+    ],
+    "fremgangsmåde": [
+      "Hak løg og hvidløg fint. Skær peberfrugten i tern.",
+      "Varm olivenolien op i en stor gryde og svits løg og hvidløg til de er bløde.",
+      "Tilsæt hakket oksekød og brun det godt af.",
+      "Kom tomatpuré, spidskommen, paprika og chili i og lad det stege med i et minut.",
+      "Tilsæt peberfrugt, hakkede tomater, kidneybønner og sorte bønner (skyllede og drænede).",
+      "Lad det simre under låg i ca. 30 minutter. Rør i det med jævne mellemrum.",
+      "Smag til med salt og peber. Server med ris, creme fraiche og evt. revet ost."
+    ]
+  },
+  {
+    "id": "gulerodskage",
+    "navn": "Gulerodskage",
+    "kilde": "Valdemarsro",
+    "kilde_url": "https://www.valdemarsro.dk/gulerodskage/",
+    "portioner": 12,
+    "tags": ["kage"],
+    "favorit": true,
+    "billede": null,
+    "noter": "Bliver ekstra god dagen efter.",
+    "ingredienser": [
+      { "mængde": 4, "enhed": "stk", "navn": "æg" },
+      { "mængde": 300, "enhed": "g", "navn": "sukker" },
+      { "mængde": 2.5, "enhed": "dl", "navn": "olie" },
+      { "mængde": 300, "enhed": "g", "navn": "revne gulerødder" },
+      { "mængde": 250, "enhed": "g", "navn": "hvedemel" },
+      { "mængde": 2, "enhed": "tsk", "navn": "bagepulver" },
+      { "mængde": 2, "enhed": "tsk", "navn": "kanel" },
+      { "mængde": 1, "enhed": "tsk", "navn": "vaniljesukker" }
+    ],
+    "fremgangsmåde": [
+      "Tænd ovnen på 175°C.",
+      "Pisk æg og sukker luftigt i en stor skål.",
+      "Tilsæt olie og revne gulerødder og rør det sammen.",
+      "Bland de tørre ingredienser og vend dem forsigtigt i dejen.",
+      "Hæld dejen i en smurt bradepande eller springform.",
+      "Bag kagen i ca. 40 minutter, eller til en kagenål kommer ren ud.",
+      "Lad kagen køle helt af inden servering. Kan pyntes med flødeostcreme."
+    ]
+  },
+  {
+    "id": "rugbroed",
+    "navn": "Rugbrød",
+    "kilde": "Meyers Madhus",
+    "kilde_url": null,
+    "portioner": 20,
+    "tags": ["brød"],
+    "favorit": false,
+    "billede": null,
+    "noter": null,
+    "ingredienser": [
+      { "mængde": 5, "enhed": "dl", "navn": "surdej" },
+      { "mængde": 1, "enhed": "l", "navn": "vand" },
+      { "mængde": 500, "enhed": "g", "navn": "knækkede rugkerner" },
+      { "mængde": 500, "enhed": "g", "navn": "rugmel" },
+      { "mængde": 200, "enhed": "g", "navn": "solsikkekerner" },
+      { "mængde": 100, "enhed": "g", "navn": "hørfrø" },
+      { "mængde": 30, "enhed": "g", "navn": "salt" }
+    ],
+    "fremgangsmåde": [
+      "Bland surdej, vand og salt i en stor skål.",
+      "Tilsæt kerner, frø og mel, og rør det godt sammen.",
+      "Dæk skålen til og lad dejen hæve ved stuetemperatur i 4-6 timer.",
+      "Hæld dejen i en smurt rugbrødsform og lad den efterhæve 1 time.",
+      "Bag brødet ved 180°C i ca. 1 time og 45 minutter.",
+      "Vend brødet ud af formen og lad det køle helt af på en rist."
+    ]
+  },
+  {
+    "id": "aeblekage",
+    "navn": "Æblekage",
+    "kilde": "Mormor",
+    "kilde_url": null,
+    "portioner": 6,
+    "tags": ["dessert"],
+    "favorit": false,
+    "billede": null,
+    "noter": "Perfekt til rester af æbler fra haven.",
+    "ingredienser": [
+      { "mængde": 6, "enhed": "stk", "navn": "æbler" },
+      { "mængde": 100, "enhed": "g", "navn": "smør" },
+      { "mængde": 150, "enhed": "g", "navn": "rasp" },
+      { "mængde": 100, "enhed": "g", "navn": "sukker" },
+      { "mængde": 1, "enhed": "tsk", "navn": "kanel" },
+      { "mængde": 2.5, "enhed": "dl", "navn": "flødeskum" }
+    ],
+    "fremgangsmåde": [
+      "Skræl æblerne, fjern kernehuset og skær dem i både.",
+      "Kog æblerne møre i en gryde med lidt vand og halvdelen af sukkeret.",
+      "Rist rasp med smør, sukker og kanel på en pande til det er gyldent og sprødt.",
+      "Læg lag af æblemos og ristet rasp i skåler eller et fad.",
+      "Top med flødeskum og server."
+    ]
+  },
+  {
+    "id": "havregroed",
+    "navn": "Havregrød med bær",
+    "kilde": "Egen opskrift",
+    "kilde_url": null,
+    "portioner": 2,
+    "tags": ["morgenmad"],
+    "favorit": false,
+    "billede": null,
+    "noter": null,
+    "ingredienser": [
+      { "mængde": 1.5, "enhed": "dl", "navn": "havregryn" },
+      { "mængde": 3, "enhed": "dl", "navn": "mælk" },
+      { "mængde": 1, "enhed": "pinch", "navn": "salt" },
+      { "mængde": 1, "enhed": "spsk", "navn": "honning" },
+      { "mængde": 100, "enhed": "g", "navn": "friske bær" }
+    ],
+    "fremgangsmåde": [
+      "Kom havregryn, mælk og salt i en lille gryde.",
+      "Bring det i kog under omrøring, og skru så ned til lav varme.",
+      "Lad grøden simre i 5 minutter, mens du rører.",
+      "Server med honning og friske bær ovenpå."
+    ]
+  },
+  {
+    "id": "smoerrebroed-med-sild",
+    "navn": "Smørrebrød med sild",
+    "kilde": "Egen opskrift",
+    "kilde_url": null,
+    "portioner": 2,
+    "tags": ["frokost"],
+    "favorit": false,
+    "billede": null,
+    "noter": null,
+    "ingredienser": [
+      { "mængde": 2, "enhed": "stk", "navn": "skiver rugbrød" },
+      { "mængde": 4, "enhed": "stk", "navn": "sildefileter" },
+      { "mængde": 1, "enhed": "stk", "navn": "rødløg" },
+      { "mængde": 2, "enhed": "spsk", "navn": "kapers" },
+      { "mængde": 2, "enhed": "spsk", "navn": "karrymayo" }
+    ],
+    "fremgangsmåde": [
+      "Smør rugbrødet med karrymayo.",
+      "Læg sildefileter på brødet.",
+      "Pynt med tyndt skårne ringe af rødløg og kapers.",
+      "Server straks."
+    ]
+  }
+]
