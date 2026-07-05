@@ -147,51 +147,98 @@
   ]
 },
   {
-    "id": "havregroed",
-    "navn": "Havregrød med bær",
-    "kilde": "Egen opskrift",
-    "kilde_url": null,
-    "portioner": 2,
-    "tags": ["morgenmad"],
-    "favorit": false,
-    "billede": null,
-    "noter": null,
-    "ingredienser": [
-      { "mængde": 1.5, "enhed": "dl", "navn": "havregryn" },
-      { "mængde": 3, "enhed": "dl", "navn": "mælk" },
-      { "mængde": 1, "enhed": "pinch", "navn": "salt" },
-      { "mængde": 1, "enhed": "spsk", "navn": "honning" },
-      { "mængde": 100, "enhed": "g", "navn": "friske bær" }
-    ],
-    "fremgangsmåde": [
-      "Kom havregryn, mælk og salt i en lille gryde.",
-      "Bring det i kog under omrøring, og skru så ned til lav varme.",
-      "Lad grøden simre i 5 minutter, mens du rører.",
-      "Server med honning og friske bær ovenpå."
-    ]
-  },
+  "id": "aeggekage-med-kylling-og-mozzarella",
+  "navn": "Æggekage med kylling og mozzarella",
+  "kilde": "Gourministeriet",
+  "kilde_url": "https://gourministeriet.dk/aeggekage-med-kylling-og-mozzarella/",
+  "portioner": 4,
+  "tags": ["aftensmad"],
+  "favorit": false,
+  "billede": "https://gourministeriet.dk/wp-content/uploads/2021/01/IMG_3853-scaled.jpg",
+  "noter": null,
+  "ingredienser": [
+    { "mængde": 8, "enhed": "stk", "navn": "æg" },
+    { "mængde": 1, "enhed": "dl", "navn": "mælk" },
+    { "mængde": 1, "enhed": "spsk", "navn": "maizena" },
+    { "mængde": 2, "enhed": "tsk", "navn": "bagepulver" },
+    { "mængde": null, "enhed": null, "navn": "salt og peber" },
+    { "mængde": null, "enhed": null, "navn": "lidt olie" },
+    { "mængde": null, "enhed": null, "navn": "1-2 tilberedte kyllingebryster skåret i skiver, kogt eller stegt (eller anden reste kylling)" },
+    { "mængde": 8, "enhed": "stk", "navn": "skiver bacon" },
+    { "mængde": 1, "enhed": "stk", "navn": "bøffel mozzarella" },
+    { "mængde": null, "enhed": null, "navn": "1 håndfuld ruccola" }
+  ],
+  "fremgangsmåde": [
+    "Varm en smule olie på en pande og steg baconen sprød. Læg baconen til side på lidt køkkenrulle og lad panden stå til æggemassen.",
+    "Pisk æggene sammen med mælk, maizena og bagepulver, og krydr med salt og peber.",
+    "Hæld æggemassen på den varme pande med bacon fedt, og lad den stå i 5 min ved middel varme.",
+    "Sæt panden i en forvarmet ovn ved 180 grader, almindelig ovn, i ca. 20 min., – eller til massen er blevet fast.",
+    "Tag panden ud og top æggekagen med skiver af kylling og mozzarella revet i større stykker, og bag den videre i ca. 3-5 min.",
+    "Lad æggekagen hvile et øjeblik inden den toppes med masser af ruccola, bacon knækket i skiver og evt. sprød friséesalat."
+  ]
+},
   {
-    "id": "smoerrebroed-med-sild",
-    "navn": "Smørrebrød med sild",
-    "kilde": "Egen opskrift",
-    "kilde_url": null,
-    "portioner": 2,
-    "tags": ["frokost"],
-    "favorit": false,
-    "billede": null,
-    "noter": null,
-    "ingredienser": [
-      { "mængde": 2, "enhed": "stk", "navn": "skiver rugbrød" },
-      { "mængde": 4, "enhed": "stk", "navn": "sildefileter" },
-      { "mængde": 1, "enhed": "stk", "navn": "rødløg" },
-      { "mængde": 2, "enhed": "spsk", "navn": "kapers" },
-      { "mængde": 2, "enhed": "spsk", "navn": "karrymayo" }
-    ],
-    "fremgangsmåde": [
-      "Smør rugbrødet med karrymayo.",
-      "Læg sildefileter på brødet.",
-      "Pynt med tyndt skårne ringe af rødløg og kapers.",
-      "Server straks."
-    ]
-  }
+  "id": "chili-con-carne",
+  "navn": "Chili con carne",
+  "kilde": "Valdemarsro",
+  "kilde_url": "https://www.valdemarsro.dk/chili-con-carne/",
+  "portioner": 4,
+  "tags": ["aftensmad"],
+  "favorit": false,
+  "billede": "https://www.valdemarsro.dk/wp-content/2013/04/chili-con-carne-2.jpg",
+  "noter": null,
+  "ingredienser": [
+    { "mængde": 1, "enhed": "tsk", "navn": "stødt spidskommen" },
+    { "mængde": 1, "enhed": "tsk", "navn": "stødt kanel" },
+    { "mængde": 1, "enhed": "tsk", "navn": "stødt koriander" },
+    { "mængde": 0.5, "enhed": "tsk", "navn": "chiliflager" },
+    { "mængde": 2, "enhed": "fed", "navn": "hvidløg, finthakket" },
+    { "mængde": 2, "enhed": "stk", "navn": "løg, finthakket" },
+    { "mængde": 350, "enhed": "g", "navn": "hakket oksekød" },
+    { "mængde": 400, "enhed": "g", "navn": "hakkede tomater på dåse" },
+    { "mængde": 3, "enhed": "spsk", "navn": "soltørrede tomater i olie, finthakket" },
+    { "mængde": 1, "enhed": "dl", "navn": "oksebouillon" },
+    { "mængde": 2, "enhed": "dåse", "navn": "kidneybønner, drænede og skyllede" },
+    { "mængde": 40, "enhed": "g", "navn": "mørk chokolade" },
+    { "mængde": 3, "enhed": "spsk", "navn": "olivenolie" },
+    { "mængde": null, "enhed": null, "navn": "salt og friskkværnet peber" },
+    { "mængde": 125, "enhed": "g", "navn": "nachos (til servering)" },
+    { "mængde": 3, "enhed": "dl", "navn": "ris (til servering)" },
+    { "mængde": 2, "enhed": "dl", "navn": "cremefraiche 18 % (til servering)" },
+    { "mængde": 150, "enhed": "g", "navn": "cheddar (til servering)" },
+    { "mængde": null, "enhed": null, "navn": "1 håndfuld frisk koriander (til servering)" },
+    { "mængde": 1, "enhed": "stk", "navn": "rød chili, finthakket (til servering)" }
+  ],
+  "fremgangsmåde": [
+    "Varm olien til lav-middel varme i en sauterpande eller en gryde. Tilsæt spidskommen, kanel, koriander, chili og hvidløg. Rør rundt i et par minutter, skru lidt ned for varmen og tilsæt de hakkede løg. Rør rundt, til løgene er bløde, tilsæt nu oksekød og brun det ved høj varme. Tilsæt hakkede tomater, hakkede soltørrede tomater og oksebouillon. Læg låg på og lad det simre i en halv times tid.",
+    "Smag saucen til, skal det have mere power, så tilføj lidt mere chili. Hvis saucen er blevet for stærk, så vent med at gøre noget. Bønnerne og chokoladen runder den af snart. Tilsæt bønner og varm retten godt igennem i 5 minutter.",
+    "Tag gryden af varmen og rør først halvdelen af chokoladen i og smag til med resten af chokoladen. Smag til igen med salt og peber.",
+    "Server med nachos, ris, godt brød, creme fraiche og gratiner evt med cheddarost."
+  ]
+},
+  {
+  "id": "salat-med-vandmelon-og-avocado",
+  "navn": "Salat med vandmelon og avocado",
+  "kilde": "Valdemarsro",
+  "kilde_url": "https://www.valdemarsro.dk/salat-vandmelon/",
+  "portioner": 4,
+  "tags": ["aftensmad"],
+  "favorit": false,
+  "billede": "https://www.valdemarsro.dk/wp-content/2020/05/vandmelonsalat-avocado.jpg",
+  "noter": null,
+  "ingredienser": [
+    { "mængde": 0.5, "enhed": "stk", "navn": "vandmelon, skåret i tern" },
+    { "mængde": 2, "enhed": "stk", "navn": "avocado, skåret i tern" },
+    { "mængde": 0.5, "enhed": "stk", "navn": "agurk, halveret og skåret i skiver" },
+    { "mængde": 125, "enhed": "g", "navn": "rucola" },
+    { "mængde": 50, "enhed": "g", "navn": "feta" },
+    { "mængde": 30, "enhed": "g", "navn": "pinjekerner" },
+    { "mængde": null, "enhed": null, "navn": "salt og friskkværnet peber" }
+  ],
+  "fremgangsmåde": [
+    "Vend vandmelon, avocado, agurk og rucola sammen på et fad eller en skål og smuldr feta over.",
+    "Rist pinjekernerne på en tør varm pande i 2-3 minutter under omrøring til de er gyldenbrune og drys dem over salaten.",
+    "Smag til med flagesalt og friskkværnet sort peber inden servering."
+  ]
+}
 ]
