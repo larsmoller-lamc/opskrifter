@@ -136,15 +136,17 @@ function closeRecipe(popHistory = true) {
 }
 
 function renderDetail(r) {
-  const ingredienser = (r.ingredienser || []).map(i => {
-    const amount = formatAmount(i);
-    return `<li>
-      <span class="ing-amount ${amount ? '' : 'ing-amount-empty'}">${amount || '—'}</span>
-      <span class="ing-name">${escapeHtml(i.navn || '')}</span>
-    </li>`;
-  }).join('');
+  const ingredienser = renderIngredients(r.ingredienser || []);
 
-  const steps = (r.fremgangsmåde || []).map(s => `<li>${escapeHtml(s)}</li>`).join('');
+  const steps = (r.fremgangsmåde || []).map(s => {
+    const text = String(s || '');
+    // Detekter overskrift: **tekst**
+    const headingMatch = text.match(/^\*\*(.+?)\*\*\s*$/);
+    if (headingMatch) {
+      return `<li class="step-heading">${escapeHtml(headingMatch[1])}</li>`;
+    }
+    return `<li>${escapeHtml(text)}</li>`;
+  }).join('');
 
   const tags = (r.tags || []).map(t =>
     `<span class="badge">${escapeHtml(capitalize(t))}</span>`
@@ -184,6 +186,56 @@ function renderDetail(r) {
 }
 
 // ---------- Helpers ----------
+function renderIngredients(list) {
+  // Grupper efter sektion (parentes bagerst i navnet).
+  // Ingredienser uden parentes tilhører hoveddelen (sektion 1) og vises uden overskrift.
+  // Efterfølgende ingredienser med parentes grupperes under en overskrift.
+  const groups = [];
+  let currentGroup = { heading: null, items: [] };
+  groups.push(currentGroup);
+
+  list.forEach(ing => {
+    const navn = String(ing.navn || '');
+    // Detekter afsluttende parentes: "æggeblommer (Vaniljecreme)"
+    const match = navn.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
+    if (match) {
+      const cleanName = match[1].trim();
+      const sectionName = match[2].trim();
+      // Er dette en NY sektion (forskellig fra sidste)?
+      if (currentGroup.heading !== sectionName) {
+        currentGroup = { heading: sectionName, items: [] };
+        groups.push(currentGroup);
+      }
+      currentGroup.items.push({ ...ing, navn: cleanName });
+    } else {
+      // Ingen parentes → hoveddel. Hvis vi er i en sektion allerede, start en ny "hoveddel"-gruppe.
+      if (currentGroup.heading !== null) {
+        currentGroup = { heading: null, items: [] };
+        groups.push(currentGroup);
+      }
+      currentGroup.items.push(ing);
+    }
+  });
+
+  // Render grupperne
+  return groups
+    .filter(g => g.items.length > 0)
+    .map(g => {
+      const headingHtml = g.heading
+        ? `<li class="ing-heading">${escapeHtml(g.heading)}</li>`
+        : '';
+      const itemsHtml = g.items.map(i => {
+        const amount = formatAmount(i);
+        return `<li>
+          <span class="ing-amount ${amount ? '' : 'ing-amount-empty'}">${amount || '—'}</span>
+          <span class="ing-name">${escapeHtml(i.navn || '')}</span>
+        </li>`;
+      }).join('');
+      return headingHtml + itemsHtml;
+    })
+    .join('');
+}
+
 function formatAmount(ing) {
   const m = ing.mængde;
   const e = ing.enhed;
