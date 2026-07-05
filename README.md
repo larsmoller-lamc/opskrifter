@@ -5,7 +5,7 @@ En simpel opskriftsside. Data ligger i `recipes.json` — hjemmesiden læser den
 ## Struktur
 
 ```
-recipes.json    ← databasen (rediger denne for at tilføje/ændre opskrifter)
+recipes.json    ← databasen  (rediger denne for at tilføje/ændre opskrifter)
 index.html      ← hovedsiden
 styles.css      ← styling
 app.js          ← logik (søgning, filtrering, detail-view)
