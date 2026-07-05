@@ -358,6 +358,22 @@ body {
   gap: 12px;
 }
 .ingredients li:last-child { border-bottom: none; }
+
+/* Sektionsoverskrift i ingrediensliste — fx "Vaniljecreme", "Remonce" */
+.ingredients li.ing-heading {
+  display: block;
+  padding: 18px 0 6px;
+  border-bottom: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #4A727B;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.ingredients li.ing-heading:first-child {
+  padding-top: 0;
+}
 .ing-amount {
   font-weight: 700;
   color: #2A3A42;
@@ -404,6 +420,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Sektionsoverskrift i fremgangsmåde — bryder ikke nummereringen */
+.steps li.step-heading {
+  display: block;
+  padding: 20px 0 6px;
+  border-bottom: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #4A727B;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  counter-increment: none;
+}
+.steps li.step-heading:first-child {
+  padding-top: 0;
+}
+.steps li.step-heading::before {
+  display: none;
 }
 
 /* Noter */
