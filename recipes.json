@@ -27,16 +27,17 @@
     { "mængde": null, "enhed": null, "navn": "salt og friskkværnet peber" }
   ],
   "fremgangsmåde": [
+    "**Tærtedej**",
     "Bland hvedemel og fuldkornsmel med salt og smuldr smør i melblandingen. Det kan også køres på en foodprocessor.",
     "Saml dejen med vand, lad den gerne hvile på køl i 30 minutter.",
     "Tryk dejen ud i en smurt tærteform på 24 cm i diameter og prik hul i dejen med en gaffel.",
     "Forbag dejen i en forvarmet ovn ved 175 grader varmluft i 10 minutter, hvorefter den er klar til at blive fyldt og bagt færdigt.",
+    "**Tærte med kylling og grønt**",
     "Vend kyllingetern med hvedemel, salt og peber og brun dem hurtigt af på en varm pande med olie. Kyllingekødet skal ikke være gennemstegt.",
     "Pisk æg, mælk, hytteost, salt og friskkværnet peber sammen med et piskeris og vend kylling, broccoli og chorizotern i blandingen.",
     "Fordel fyldet i den forbagte tærtebund, drys med friskrevet cheddar og bag tærten i ca. 35 minutter i en forvarmet ovn ved 175 grader varmluft, til æggemassen er stivnet."
   ]
-},
-  {
+},{
   "id": "boller-i-karry",
   "navn": "Boller i karry",
   "kilde": "Valdemarsro",
@@ -49,34 +50,37 @@
   "ingredienser": [
     { "mængde": 400, "enhed": "g", "navn": "hakket svinekød" },
     { "mængde": 1, "enhed": "stk", "navn": "løg, finthakket" },
-    { "mængde": 0.5, "enhed": "dl", "navn": "mælk (til kødboller)" },
+    { "mængde": 0.5, "enhed": "dl", "navn": "mælk" },
     { "mængde": 1, "enhed": "stk", "navn": "æg" },
     { "mængde": 1, "enhed": "dl", "navn": "finvalset havregryn" },
-    { "mængde": 1, "enhed": "tsk", "navn": "salt og friskkværnet peber (til kødboller)" },
-    { "mængde": 2, "enhed": "spsk", "navn": "smør" },
-    { "mængde": 2, "enhed": "tsk", "navn": "mediumstærk karry" },
-    { "mængde": 1, "enhed": "tsk", "navn": "stødt spidskommen" },
-    { "mængde": 1, "enhed": "tsk", "navn": "stødt koriander" },
-    { "mængde": 3, "enhed": "spsk", "navn": "hvedemel" },
-    { "mængde": 3, "enhed": "dl", "navn": "mælk (til sauce)" },
-    { "mængde": 3, "enhed": "dl", "navn": "grøntsagsbouillon" },
-    { "mængde": null, "enhed": null, "navn": "salt og friskkværnet peber (til sauce)" },
+    { "mængde": 1, "enhed": "tsk", "navn": "salt og friskkværnet peber" },
+    { "mængde": 2, "enhed": "spsk", "navn": "smør (Karrysauce)" },
+    { "mængde": 2, "enhed": "tsk", "navn": "mediumstærk karry (Karrysauce)" },
+    { "mængde": 1, "enhed": "tsk", "navn": "stødt spidskommen (Karrysauce)" },
+    { "mængde": 1, "enhed": "tsk", "navn": "stødt koriander (Karrysauce)" },
+    { "mængde": 3, "enhed": "spsk", "navn": "hvedemel (Karrysauce)" },
+    { "mængde": 3, "enhed": "dl", "navn": "mælk (Karrysauce)" },
+    { "mængde": 3, "enhed": "dl", "navn": "grøntsagsbouillon (Karrysauce)" },
+    { "mængde": null, "enhed": null, "navn": "salt og friskkværnet peber (Karrysauce)" },
     { "mængde": 4, "enhed": "dl", "navn": "basmati ris (til servering)" },
     { "mængde": 1, "enhed": "stk", "navn": "æble, skåret i tern (til servering)" },
     { "mængde": 1, "enhed": "stk", "navn": "mango, skåret i tern (til servering)" },
-    { "mængde": null, "enhed": null, "navn": "1 håndfuld bredbladet persille, finthakket (til servering)" }
+    { "mængde": 1, "enhed": null, "navn": "håndfuld bredbladet persille, finthakket (til servering)" }
   ],
   "fremgangsmåde": [
+    "**Ris**",
     "Kog risene efter anvisning på emballagen.",
-    "Rør alle ingredienserne til kødbollerne sammen i en skål med en håndmikser og tilbered saucen, mens farsen hviler.",
+    "**Kødboller**",
+    "Rør alle ingredienserne sammen i en skål med en håndmikser og tilbered saucen, mens farsen hviler.",
+    "**Karrysauce**",
     "Smelt smør ved svag varme i en gryde sammen med karry, koriander og spidskommen, drys mel i og pisk sammen. Pisk langsomt mælk i, til opbagningen har en ensartet konsistens.",
     "Kog saucen op og tilsæt grøntsagsbouillon, til saucen har den rette tykkelse. Smag saucen til med salt og peber og evt. mere karry.",
-    "Form farsen til små kødboller. Kom koldt vand på hænderne, når kødbollerne formes, så de bliver glatte og faste i overfladen. Kog enten kødbollerne i en kasserolle med grøntsagsbouillon i et par minutter og kom dem derefter i karrysaucen – eller kom de rå kødboller direkte i saucen, hvor de tilberedes og giver god smag til saucen.",
-    "Kom låg på gryden og lad sauce og kødboller simre ved lav varme i cirka 15 minutter, til kødbollerne er perfekt tilberedt og klar til servering. Rør indimellem forsigtigt i gryden med en træspartel, så saucen ikke brænder fast, men uden at kødbollerne går i stykker og spæd til med mere grøntsagsbouillon, hvis nødvendigt.",
+    "Form farsen til små kødboller. Kom koldt vand på hænderne, når kødbollerne formes, så de bliver glatte og faste i overfladen. Kog enten kødbollerne i en kasserolle med grøntsagsboullion i et par minutter og kom dem derefter i karrysaucen – eller kom de rå kødboller direkte i saucen, hvor de tilberedes og giver god smag til saucen.",
+    "Kom låg på gryden og lad sauce og kødboller simre ved lav varme i cirka 15 minutter, til kødbollerne er perfekt tilberedt og klar til servering. Rør indimellem forsigtigt i gryden med en træspartel, så saucen ikke brænder fast, men uden at kødbollerne går i stykker og spæd til med mere grøntsagsbouillion, hvis nødvendigt.",
+    "**Til servering**",
     "Boller i karry serveres traditionelt blot med ris, men det er også virkelig lækkert med et drys æbler og mango i tern og lidt finthakket persille."
   ]
-},
-  {
+},{
   "id": "caesarsalat",
   "navn": "Cæsarsalat",
   "kilde": "Valdemarsro",
@@ -108,8 +112,7 @@
     "Vend kyllingebrysterne, skru lidt op for varmen og steg dem i cirka 4-5 minutter på den anden side.",
     "Pluk salaten og fordel den på fire tallerkener. Skær kyllingebrysterne i skiver, anret dem på tallerkener og kom til sidst dressing, parmesan og croutoner ovenpå."
   ]
-},
-  {
+},{
   "id": "kyllingelaar-i-floedesauce",
   "navn": "Kyllingelår i flødesauce",
   "kilde": null,
@@ -145,8 +148,7 @@
     "Kog risene efter anvisning på emballagen.",
     "Pynt med frisk persille, hvis ønsket, og server med ris."
   ]
-},
-  {
+},{
   "id": "aeggekage-med-kylling-og-mozzarella",
   "navn": "Æggekage med kylling og mozzarella",
   "kilde": "Gourministeriet",
@@ -176,8 +178,7 @@
     "Tag panden ud og top æggekagen med skiver af kylling og mozzarella revet i større stykker, og bag den videre i ca. 3-5 min.",
     "Lad æggekagen hvile et øjeblik inden den toppes med masser af ruccola, bacon knækket i skiver og evt. sprød friséesalat."
   ]
-},
-  {
+},{
   "id": "chili-con-carne",
   "navn": "Chili con carne",
   "kilde": "Valdemarsro",
@@ -215,8 +216,7 @@
     "Tag gryden af varmen og rør først halvdelen af chokoladen i og smag til med resten af chokoladen. Smag til igen med salt og peber.",
     "Server med nachos, ris, godt brød, creme fraiche og gratiner evt med cheddarost."
   ]
-},
-  {
+},{
   "id": "salat-med-vandmelon-og-avocado",
   "navn": "Salat med vandmelon og avocado",
   "kilde": "Valdemarsro",
@@ -240,8 +240,7 @@
     "Rist pinjekernerne på en tør varm pande i 2-3 minutter under omrøring til de er gyldenbrune og drys dem over salaten.",
     "Smag til med flagesalt og friskkværnet sort peber inden servering."
   ]
-},
-  {
+},{
   "id": "one-pot-pasta-bolognese",
   "navn": "One pot pasta bolognese",
   "kilde": "Gourministeriet",
@@ -337,6 +336,35 @@
     "Pensl forsigtigt med et sammenpisket æg og bag i en forvarmet ovn ved 175 grader varmluft i cirka 18 minutter. Lad fastelavnsbollerne køle lidt af på en rist.",
     "Pisk en tyk hvid glasur af flormelis og koldt vand, og en tyk brun glasur af flormelis, kakao og koldt vand.",
     "Fordel glasur på fastelavnsbollerne og drys med pistaciekerner, frysetørret hindbær, krymmel eller chokoladeknapper."
+  ]
+},{
+  "id": "grydebroed",
+  "navn": "Grydebrød",
+  "kilde": "Valdemarsro",
+  "kilde_url": "https://www.valdemarsro.dk/grydebroed/",
+  "portioner": 1,
+  "tags": ["brød"],
+  "favorit": false,
+  "billede": "https://www.valdemarsro.dk/wp-content/2012/01/grydebroed-opskrift.jpg",
+  "noter": null,
+  "ingredienser": [
+    { "mængde": 5, "enhed": "dl", "navn": "vand" },
+    { "mængde": 5, "enhed": "g", "navn": "gær" },
+    { "mængde": 1.5, "enhed": "tsk", "navn": "salt" },
+    { "mængde": 1, "enhed": "tsk", "navn": "honning" },
+    { "mængde": 60, "enhed": "g", "navn": "sigtet ølandshvedemel" },
+    { "mængde": 60, "enhed": "g", "navn": "fuldkorn ølandshvedemel" },
+    { "mængde": 500, "enhed": "g", "navn": "hvedemel" }
+  ],
+  "fremgangsmåde": [
+    "Opløs gæren i en skål med vand.",
+    "Tilsæt honning, salt og de to varianter af ølandshvede og rør det godt igennem. Tilsæt hvedemel og rør igen.",
+    "Dæk skålen til og lad dejen hæve i 10-12 timer på køkkenbordet.",
+    "Skrab dejen ud på et meldrysset bord og fold den nænsomt ind over hinanden 5-8 gange. Drys godt med mel over dejen og læg den i en meldrysset skål eller hævekurv og lad den hæve i 2 timer.",
+    "Når dejen har hævet i 1,5 time, sættes en støbejernsgryde med låg på ca. 4,2 liter i en kold ovn. Tænd ovnen på 250 grader varmluft eller almindelig ovn og tag gryden ud af ovnen, når temperaturen er på 250 grader. Tag låget af gryden og hæld med det samme dejen i gryden. Læg låg på og sæt gryden tilbage i ovnen.",
+    "Bag brødet i 30 minutter ved 250 grader, tag derefter låget af og bag videre ved 230 grader varmluft i 15 minutter.",
+    "Tag gryden ud af ovnen og vend brødet ud på en rist.",
+    "Sørg for at bruge grydelapper, da gryden og låget bliver rygende varme!"
   ]
 }
 ]
