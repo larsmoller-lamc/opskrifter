@@ -1,5 +1,37 @@
 [
   {
+  "id": "aeltefrit-focaccia",
+  "navn": "Æltefrit focaccia",
+  "kilde": "Gourministeriet",
+  "kilde_url": "https://gourministeriet.dk/aeltefrit-focaccia-nem-og-hurtigt-focaccia/",
+  "portioner": 8,
+  "tags": ["brød"],
+  "favorit": false,
+  "billede": "https://gourministeriet.dk/wp-content/uploads/2026/06/126A9722-scaled.jpg",
+  "noter": null,
+  "ingredienser": [
+    { "mængde": 4, "enhed": "dl", "navn": "lunken vand" },
+    { "mængde": 25, "enhed": "g", "navn": "gær" },
+    { "mængde": 1, "enhed": "tsk", "navn": "honning" },
+    { "mængde": 0.5, "enhed": "dl", "navn": "olivenolie" },
+    { "mængde": 500, "enhed": "g", "navn": "mel (gerne manitoba, pizzamel eller tipo 00)" },
+    { "mængde": 1, "enhed": "tsk", "navn": "salt" },
+    { "mængde": 3, "enhed": "spsk", "navn": "olivenolie til top og bund" },
+    { "mængde": null, "enhed": null, "navn": "flagesalt til toppen (valgfri)" }
+  ],
+  "fremgangsmåde": [
+    "Hæld vandet i en skål, og rør gæren ud heri.",
+    "Tilsæt honning, olivenolie, halvdelen af melet og salten og rør med en grydeske til det er fri for klumper.",
+    "Tilsæt det sidste mel, og rør igen, til dejen har en konsistens som en tyk grød. Du kan evt. dyppe skeen i vand, så slipper den lettere når dejen røres sammen.",
+    "Dryp toppen med lidt olivenolie, dæk skålen med film og et klæde, og lad den hæve et lunt sted i ca. 1 1/2 time.",
+    "Smør en bageform på ca. 24×24 cm med olivenolie, og hæld dejen heri. Brug fingrene til at skubbe den ud til kanterne. Lad den efterhæve i ca. 30 minutter under et klæde. Giv evt. toppen lidt olivenolie hvis den mangler – så den ikke tørrer ud.",
+    "Inden brødet smides i ovnen, hældes en god sjat olivenolie på toppen, og med fingrene laves fordybninger i dejen.",
+    "Bag brødet i en forvarmet ovn ved 230 grader, almindelig varme, i cirka 18-20 minutter – eller til det er gyldent og gennembagt.",
+    "Tag brødet ud af formen med det samme, og lad det hvile på en rist."
+  ]
+}
+,
+  {
   "id": "taerte-med-kylling-og-groent",
   "navn": "Tærte med kylling og grønt",
   "kilde": "Valdemarsro",
