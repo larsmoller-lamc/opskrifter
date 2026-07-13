@@ -13,8 +13,16 @@
 <body>
   <header class="header">
     <div class="container">
-      <h1 class="title">Opskrifter</h1>
-      <p class="subtitle" id="count">Indlæser…</p>
+      <div class="header-row">
+        <div>
+          <h1 class="title">Opskrifter</h1>
+          <p class="subtitle" id="count">Indlæser…</p>
+        </div>
+        <div class="header-actions">
+          <button class="icon-btn" id="spin-open-btn" title="Lykkehjul" aria-label="Lykkehjul">🎲</button>
+          <button class="icon-btn" id="add-open-btn" title="Tilføj opskrift" aria-label="Tilføj opskrift">+</button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -44,11 +52,74 @@
   <!-- Recipe detail overlay -->
   <div class="overlay" id="overlay" hidden>
     <div class="overlay-inner" id="overlay-inner">
-      <button class="back-btn" id="back-btn" aria-label="Tilbage">← Tilbage</button>
+      <div class="overlay-topbar">
+        <button class="back-btn" id="back-btn" aria-label="Tilbage">← Tilbage</button>
+        <div class="detail-tools">
+          <button class="tool-btn" id="edit-btn" title="Rediger">Rediger</button>
+          <button class="tool-btn tool-btn-danger" id="delete-btn" title="Slet">Slet</button>
+        </div>
+      </div>
       <div id="recipe-detail"></div>
     </div>
   </div>
 
+  <!-- Add/Edit modal -->
+  <div class="modal" id="add-modal" hidden>
+    <div class="modal-inner">
+      <div class="modal-topbar">
+        <h2 class="modal-title" id="add-modal-title">Tilføj opskrift</h2>
+        <button class="close-btn" id="add-close-btn" aria-label="Luk">✕</button>
+      </div>
+      <p class="modal-hint">Indsæt hele JSON-blokken for opskriften.</p>
+      <textarea id="json-input" class="json-input" placeholder='{
+  "id": "min-opskrift",
+  "navn": "Min opskrift",
+  ...
+}' spellcheck="false"></textarea>
+      <div class="modal-msg" id="add-msg"></div>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="add-cancel-btn">Annullér</button>
+        <button class="btn btn-primary" id="add-save-btn">Gem</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spin modal -->
+  <div class="modal" id="spin-modal" hidden>
+    <div class="modal-inner">
+      <div class="modal-topbar">
+        <h2 class="modal-title">Lykkehjulet</h2>
+        <button class="close-btn" id="spin-close-btn" aria-label="Luk">✕</button>
+      </div>
+      <p class="modal-hint">Vælg en kategori og lad tilfældigheden bestemme.</p>
+      <div class="spin-tag-picker" id="spin-tag-picker">
+        <button class="chip chip-active" data-spin="alle">Alle</button>
+        <button class="chip" data-spin="morgenmad">Morgenmad</button>
+        <button class="chip" data-spin="frokost">Frokost</button>
+        <button class="chip" data-spin="aftensmad">Aftensmad</button>
+        <button class="chip" data-spin="dessert">Dessert</button>
+        <button class="chip" data-spin="brød">Brød</button>
+        <button class="chip" data-spin="kage">Kage</button>
+        <button class="chip chip-fav" data-spin="favorit">♥ Favorit</button>
+      </div>
+
+      <div class="spin-result" id="spin-result">
+        <div class="spin-placeholder">Tryk på knappen for at spinne…</div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="spin-open-recipe-btn" hidden>Åbn opskrift</button>
+        <button class="btn btn-primary" id="spin-btn">Spin</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK (compat versions for simple global usage) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <!-- App config + app -->
+  <script src="firebase-config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

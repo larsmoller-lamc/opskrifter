@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migrér opskrifter → Firestore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #F1F3F2;
+      color: #2A3A42;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 32px 16px;
+      line-height: 1.5;
+    }
+    h1 { font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+    p { color: #5E7075; font-weight: 600; }
+    .card {
+      background: #FFF;
+      border: 1px solid #DDE3E3;
+      border-radius: 14px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    button {
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      background: #5C8B95;
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 24px;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+    button:hover { background: #4A727B; }
+    button:disabled { background: #A5B0B0; cursor: not-allowed; }
+    button.danger { background: #D67C6E; }
+    button.danger:hover { background: #B8604F; }
+    #log {
+      font-family: 'SF Mono', Menlo, monospace;
+      font-size: 13px;
+      background: #F1F3F2;
+      border: 1px solid #DDE3E3;
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 16px;
+      max-height: 360px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+    .ok { color: #4A727B; }
+    .err { color: #B8604F; }
+    .warn { color: #B8604F; font-weight: 700; }
+    input[type=file] { margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Migrér opskrifter</h1>
+  <p>Kør denne side én gang for at importere <code>recipes.json</code> til Firestore.</p>
+
+  <div class="card">
+    <h3 style="margin-bottom: 12px;">Trin 1 — Firestore-forbindelse</h3>
+    <p style="margin-bottom: 12px;">Siden bruger samme <code>firebase-config.js</code> som hovedsiden. Sørg for at den ligger i samme mappe.</p>
+
+    <h3 style="margin: 16px 0 12px;">Trin 2 — Vælg din recipes.json</h3>
+    <input type="file" id="file-input" accept=".json,application/json">
+
+    <div style="margin-top: 16px;">
+      <button id="migrate-btn" disabled>Migrér til Firestore</button>
+      <button id="wipe-btn" class="danger" disabled>Slet ALLE fra Firestore</button>
+    </div>
+
+    <div id="log"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script>
+    firebase.initializeApp(window.firebaseConfig);
+    const db = firebase.firestore();
+    const recipesCol = db.collection('recipes');
+
+    const logEl = document.getElementById('log');
+    const migrateBtn = document.getElementById('migrate-btn');
+    const wipeBtn = document.getElementById('wipe-btn');
+    const fileInput = document.getElementById('file-input');
+    let loadedRecipes = null;
+
+    function log(msg, cls) {
+      const line = document.createElement('div');
+      if (cls) line.className = cls;
+      line.textContent = msg;
+      logEl.appendChild(line);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    fileInput.addEventListener('change', async () => {
+      const file = fileInput.files[0];
+      if (!file) return;
+      try {
+        const text = await file.text();
+        const data = JSON.parse(text);
+        if (!Array.isArray(data)) throw new Error('Filen skal indeholde en JSON-array.');
+        loadedRecipes = data;
+        log(`Indlæste ${data.length} opskrifter fra ${file.name}`, 'ok');
+        migrateBtn.disabled = false;
+        wipeBtn.disabled = false;
+      } catch (err) {
+        log('Kunne ikke læse filen: ' + err.message, 'err');
+        loadedRecipes = null;
+        migrateBtn.disabled = true;
+      }
+    });
+
+    migrateBtn.addEventListener('click', async () => {
+      if (!loadedRecipes) return;
+      if (!confirm(`Import ${loadedRecipes.length} opskrifter til Firestore?\n\nEksisterende dokumenter med samme id bliver overskrevet.`)) return;
+
+      migrateBtn.disabled = true;
+      wipeBtn.disabled = true;
+      log('---');
+      log('Starter migration…');
+
+      let ok = 0, fail = 0;
+      for (const r of loadedRecipes) {
+        if (!r.id) {
+          log(`  ⚠ Springer over: opskrift uden id (navn: ${r.navn || '?'})`, 'err');
+          fail++;
+          continue;
+        }
+        try {
+          const { id, ...data } = r;
+          await recipesCol.doc(id).set(data);
+          log(`  ✓ ${id}`, 'ok');
+          ok++;
+        } catch (err) {
+          log(`  ✗ ${r.id}: ${err.message}`, 'err');
+          fail++;
+        }
+      }
+      log('---');
+      log(`Færdig: ${ok} imported, ${fail} fejl.`, fail ? 'warn' : 'ok');
+      migrateBtn.disabled = false;
+      wipeBtn.disabled = false;
+    });
+
+    wipeBtn.addEventListener('click', async () => {
+      if (!confirm('SLET ALLE opskrifter fra Firestore?\n\nDette kan IKKE fortrydes.')) return;
+      if (!confirm('Er du helt sikker? Sidste chance.')) return;
+
+      wipeBtn.disabled = true;
+      migrateBtn.disabled = true;
+      log('---');
+      log('Sletter alle dokumenter…');
+
+      try {
+        const snap = await recipesCol.get();
+        let count = 0;
+        for (const doc of snap.docs) {
+          await doc.ref.delete();
+          count++;
+        }
+        log(`Slettet ${count} dokumenter.`, 'ok');
+      } catch (err) {
+        log('Fejl: ' + err.message, 'err');
+      }
+      wipeBtn.disabled = false;
+      migrateBtn.disabled = false;
+    });
+  </script>
+</body>
+</html>
