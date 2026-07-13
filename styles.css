@@ -531,6 +531,11 @@ body {
   text-align: center;
 }
 
+/* Sørg for at hidden-attributten altid vinder over display: flex osv. */
+[hidden] {
+  display: none !important;
+}
+
 /* Modal (til upload/edit og spin) */
 .modal {
   position: fixed;
