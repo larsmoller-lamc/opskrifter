@@ -383,9 +383,17 @@ function bindSpinModal() {
   document.getElementById('spin-close-btn').addEventListener('click', closeSpinModal);
   document.getElementById('spin-btn').addEventListener('click', doSpin);
   document.getElementById('spin-open-recipe-btn').addEventListener('click', () => {
-    if (!currentSpinRecipe) return;
+    console.log('[spin] Åbn opskrift trykket. currentSpinRecipe:', currentSpinRecipe);
+    if (!currentSpinRecipe) {
+      console.warn('[spin] currentSpinRecipe er null — afbryder');
+      return;
+    }
+    const recipeId = currentSpinRecipe.id;
+    console.log('[spin] Åbner opskrift med id:', recipeId);
+    // Åbn opskrift FØRST, luk modalen bagefter — så body.style.overflow ikke ryddes midlertidigt
+    openRecipe(recipeId);
     closeSpinModal();
-    openRecipe(currentSpinRecipe.id);
+    console.log('[spin] Efter open+close. Overlay hidden?', document.getElementById('overlay').hidden);
   });
 
   document.querySelectorAll('#spin-tag-picker .chip').forEach(chip => {
